@@ -25,7 +25,7 @@ export default class HomeScreen extends React.Component {
 
   fetchData = () => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.recentSearch}&type=video&key=AIzaSyCUBqJUmKcL6M0cS7KDDQ_KM0ooTjWwz88`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.recentSearch}&type=video&key=AIzaSyCUBqJUmKcL6M0cS7KDDQ_KM0ooTj`
     )
       .then((res) => res.json())
       .then((data) => {
