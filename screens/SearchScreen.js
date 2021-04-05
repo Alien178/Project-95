@@ -30,7 +30,7 @@ export default class SearchScreen extends React.Component {
       loading: true,
     });
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=AIzaSyCazHJdPDFIZGce08QAlWKRUGk4FQiomMY`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.searchValue}&type=video&key=AIzaSyCazHJdPDFIZGce08QAlWKRUGk4FQ`
     )
       .then((res) => res.json())
       .then((data) => {
