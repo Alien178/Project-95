@@ -22,7 +22,7 @@ export default class ExploreScreen extends React.Component {
 
   fetchData = () => {
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.chosenCard}&type=video&key=AIzaSyAAjgM2Hv3ECf0MpGV-1nb5RV3AmMsEHNw`
+      `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${this.state.chosenCard}&type=video&key=AIzaSyAAjgM2Hv3ECf0MpGV-1nb5RV3AmM`
     )
       .then((res) => res.json())
       .then((data) => {
